@@ -1,0 +1,438 @@
+@import url(reset.css);
+
+
+/*===========fonts==============*/
+@font-face {
+	font-family: Monserrat;
+	src: url(../fonts/Monserrat/Montserrat-Regular.otf);
+}
+
+@font-face {
+	font-family: Moserrat Bold;
+	src: url(../fonts/Monserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+	font-family: KaushanScript;
+	src: url(../fonts/Kaushan/KaushanScript-Regular.otf);
+}
+
+
+/*===========Animations===========*/
+@keyframes gradientus {
+	0% {
+	box-shadow: 0 -600px 200px -120px rgba(81, 183, 170, 0.5) inset,
+				0 600px 200px -120px rbga(239, 182, 29, 0.5) inset;
+	}
+	25% {
+	box-shadow: 0 -300px 200px -120px rgba(239, 182, 29, 0.5) inset,
+				0  300px 200px -120px rgba(243, 129, 129, 0.5) inset;
+	}
+	50% {
+	box-shadow: 0 -300px 200px -120px rgba(239, 182, 29, 0.5) inset,
+				0  600px 200px -120px rgba(243, 129, 129, 0.5) inset;
+
+	}
+	75% {
+	box-shadow: 0 -600px 200px -120px rgba(239, 182, 29, 0.5) inset,
+				0  600px 200px -120px rgba(243, 129, 129, 0.5) inset;
+	}
+	100% {
+	box-shadow: 0 -600px 200px -120px rgba(243, 129, 129, 0.5) inset,
+				0  600px 200px -120px rgba(81, 183, 170, 0.5) inset;
+
+	}
+}
+
+/*=============Theme colors=============*/
+
+	/*Standard theme*/
+/*:root {
+	--primary-color: #f38181;
+	--accent-color: #fce38a;
+	--main-bg-color: #eaffd0;
+	--secondary-color-blue: #95e1d3;
+}*/
+
+	/*new*/
+:root {
+	--primary-color: #52bf95;
+	--accent-color: #ffcf4a;
+	--main-bg-color: #eaffd0;
+	--secondary-color-blue: #95e1d3;
+}
+
+
+* {
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+.single-page {
+	height: 100vh;
+	position: relative;
+	width: 100%;
+}
+
+.animated-bg {
+	/*========Standard theme==========*/
+	/*background: linear-gradient(
+	  to bottom,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/bg_banner.png);*/
+	-webkit-animation: gradientus 10s ease-in-out
+	 0s infinite alternate;
+	-o-animation: gradientus 10s ease-in-out
+	 0s infinite alternate;
+	animation: gradientus 10s ease-in-out
+	 0s infinite alternate;
+    background: linear-gradient(
+	  to bottom,
+      rgba(81, 183, 170, 0.8),
+      rgba(255, 207, 74, 0.8)
+    ),
+    url(https://wallpprs.media/preview/negative-space_wallpprs.com_.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.content {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.label {
+	display: inline-block;
+	padding-top: 30px;
+	padding-left: 30px;
+	color: #fff;
+	font-family: Monserrat;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.sandwich {
+	display: none;
+}
+
+.mob-menu {
+	display: none;
+}
+
+.menu {
+	display: inline-block;
+	float: right;
+	padding-top: 40px;
+}
+
+.menu li {
+	height: 30px;
+	display: inline-block;
+	float: left;
+	margin-right: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: Monserrat;
+	font-size: 1em;
+	transition: all .1s ease-in-out;
+}
+
+.menu li:hover {
+	color: var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#current {
+	color: var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+}
+
+#current a {
+	color: var(--accent-color);
+}
+
+.icon {
+	display: inline-block;
+	float: right;
+}
+
+.content h2 {
+	text-align: center;
+	margin-top: 120px;
+	color: #fff;
+	font-family: KaushanScript;
+	font-size: 4em;
+	text-transform: capitalize;
+}
+
+.content h1 {
+	text-align: center;
+	margin-top: 40px;
+	margin-left: 140px;
+	margin-right: 140px;
+	color: #fff;
+	font-family: Monserrat;
+	font-weight: bold;
+	font-size: 800%;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.content h1 span {
+	font-weight: normal;
+}
+
+.btn {
+	background: transparent;
+	border: 3px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: Monserrat;
+	height: 40px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	width: 160px;
+	transition: all .3s ease-in-out;
+	margin-bottom: 60px;
+}
+
+.btn:hover {
+	background: rgba(0,0,0,.2);
+}
+
+
+.slider {
+	width: 100%;
+	height: 85px;
+	margin: 0 auto;
+}
+
+.slider-item {
+	cursor: pointer;
+	width: 270px;
+	float: left;
+	margin-right: 30px;
+	font-family: Monserrat;
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.slider-item:last-child {
+	margin-right: -15px;
+}
+
+.slider-item hr {
+	height: 3px;
+	background: #fff;
+	border-width: 0;
+}
+
+#current-hr {
+	background: 
+		linear-gradient(
+			to right,
+			var(--primary-color) 70px,
+			#fff 70px
+		);
+}
+
+.story h4 {
+	font-size: 1.5em;
+	font-family: KaushanScript;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.story h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.2em;
+	font-family: Monserrat;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.story hr {
+	margin: 30px auto;
+	background: var(--primary-color);
+	width: 60px;
+	height: 3px;
+	border-width: 0;
+}
+
+.story p {
+	text-align: center;
+	margin: 40px 220px;
+	color: #acacac;
+	font-family: Monserrat;
+	line-height: 24px;
+}
+
+.story .img-box {
+	padding-left: 20px;
+	display: block;
+	width: 1200px;
+	height: 250px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+.story .img-box li {
+	float: left;
+	width: 380px;
+	height: 250px;
+	margin-right: 20px;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.story .img-box li:hover {
+	transform: translate(-4px, -4px);
+	filter: blur(2px);
+}
+
+.story .img-box li:last-child {
+	margin-right: 0px;
+}
+
+.counter-wrapper {
+	margin-top: 30px;
+	background: var(--secondary-color-blue);
+	width: 100%;
+	height: 175px;
+}
+
+.counter-wrapper ul {
+	display: block;
+	width: 1200px;
+	height: 175px;
+	margin: 0 auto;
+}
+
+.counter-wrapper ul li {
+	position: relative;
+	height: 175px;
+	width: 240px;
+	cursor: pointer;
+	color: #fff;
+	font-family: Monserrat;
+	font-weight: bold;
+	font-size: 4em;
+	text-align: center;
+	line-height: 175px;
+	float: left;
+	transition: all .3s ease-in-out;
+}
+
+.counter-wrapper ul li:hover {
+	background: var(--primary-color);
+}
+
+
+/*=====Responsive=====*/
+
+@media screen and (max-width: 960px) {
+
+	.content {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.menu {
+		display: none;
+	}
+
+	.welcome {
+		display: none;
+	}
+
+	.label:after {
+		margin-left: 4px;
+		color: var(--accent-color);
+		font-style: italic;
+		content: "mobile";
+		font-family: Monserrat;
+		font-size: 0.5em;
+	}
+
+	.content h2 {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: #fff;
+		font-family: KaushanScript;
+		font-size: 4em;
+		text-transform: capitalize;
+	}	
+
+	.sandwich {
+		float: right;
+		margin-top: 35px;
+		margin-right: 35px;
+		background: transparent;
+		font-size: 1em;
+		display: inline-block;
+		color: #fff;
+		font-size: 2em;
+		font-weight: bold;
+		border: 0;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+		margin-bottom: 35px;
+	}
+
+	.sandwich:hover {
+		color: var(--accent-color);
+	}
+
+	.mob-menu {
+		width: 100vw;
+		transition: all .3s ease-in-out;
+	}
+
+	.mob-menu li {
+		text-transform: uppercase;
+		font-family: Monserrat;
+		font-size: 1.2em;
+		text-align: center;
+		display: block;
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		margin-bottom: 8px;
+		padding: 2px;
+		background: rgba(255,255,255,.3);
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+	}
+
+	.mob-menu li:hover {
+		background: rgba(255,255,255,.5);
+		border-bottom: 3px solid var(--accent-color);
+	}
+
+}
+
+
+@media screen and (max-height: 760px) {
+	
+	.single-page {
+		height: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1240px) {
+
+}
