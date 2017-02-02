@@ -3,13 +3,13 @@
 
 /*===========fonts==============*/
 @font-face {
-	font-family: Monserrat;
-	src: url(../fonts/Monserrat/Montserrat-Regular.otf);
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat/Montserrat-Regular.otf);
 }
 
 @font-face {
 	font-family: Moserrat Bold;
-	src: url(../fonts/Monserrat/Montserrat-Bold.otf);
+	src: url(../fonts/Montserrat/Montserrat-Bold.otf);
 }
 
 @font-face {
@@ -22,7 +22,7 @@
 @keyframes gradientus {
 	0% {
 	box-shadow: 0 -600px 200px -120px rgba(81, 183, 170, 0.5) inset,
-				0 600px 200px -120px rbga(239, 182, 29, 0.5) inset;
+				0 600px 200px -120px rgba(239, 182, 29, 0.5) inset;
 	}
 	25% {
 	box-shadow: 0 -300px 200px -120px rgba(239, 182, 29, 0.5) inset,
@@ -109,7 +109,7 @@
 	padding-top: 30px;
 	padding-left: 30px;
 	color: #fff;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	font-size: 2em;
 	font-weight: bold;
 }
@@ -135,7 +135,7 @@
 	margin-right: 40px;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	font-size: 1em;
 	transition: all .1s ease-in-out;
 }
@@ -166,7 +166,7 @@ a {
 
 .content h2 {
 	text-align: center;
-	margin-top: 120px;
+	margin: 8vh 0px;
 	color: #fff;
 	font-family: KaushanScript;
 	font-size: 4em;
@@ -179,7 +179,7 @@ a {
 	margin-left: 140px;
 	margin-right: 140px;
 	color: #fff;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	font-weight: bold;
 	font-size: 800%;
 	text-transform: uppercase;
@@ -196,7 +196,7 @@ a {
 	color: #fff;
 	cursor: pointer;
 	display: block;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	height: 40px;
 	margin: 0 auto;
 	text-transform: uppercase;
@@ -211,17 +211,17 @@ a {
 
 
 .slider {
-	width: 100%;
-	height: 85px;
+	width: 90%;
+	height: 10vh;
 	margin: 0 auto;
 }
 
 .slider-item {
 	cursor: pointer;
-	width: 270px;
+	width: 16vw;
 	float: left;
 	margin-right: 30px;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	font-size: 1.2em;
 	color: #fff;
 	font-weight: bold;
@@ -258,7 +258,7 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 2.2em;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	text-align: center;
 	margin-top: 20px;
 }
@@ -272,20 +272,21 @@ a {
 }
 
 .story p {
-	text-align: center;
-	margin: 40px 220px;
+	text-align: justify;
+	margin: 40px 20vh;
 	color: #acacac;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	line-height: 24px;
 }
 
 .story .img-box {
 	padding-left: 20px;
-	display: block;
-	width: 1200px;
+	display: flex;
+	width: 100%;
 	height: 250px;
 	margin: 0 auto;
 	margin-bottom: 80px;
+	justify-content: center;
 }
 
 .story .img-box li {
@@ -326,7 +327,7 @@ a {
 	width: 240px;
 	cursor: pointer;
 	color: #fff;
-	font-family: Monserrat;
+	font-family: Montserrat;
 	font-weight: bold;
 	font-size: 4em;
 	text-align: center;
@@ -362,19 +363,9 @@ a {
 		color: var(--accent-color);
 		font-style: italic;
 		content: "mobile";
-		font-family: Monserrat;
+		font-family: Montserrat;
 		font-size: 0.5em;
 	}
-
-	.content h2 {
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		color: #fff;
-		font-family: KaushanScript;
-		font-size: 4em;
-		text-transform: capitalize;
-	}	
 
 	.sandwich {
 		float: right;
@@ -403,7 +394,7 @@ a {
 
 	.mob-menu li {
 		text-transform: uppercase;
-		font-family: Monserrat;
+		font-family: Montserrat;
 		font-size: 1.2em;
 		text-align: center;
 		display: block;
