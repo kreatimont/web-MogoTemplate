@@ -175,15 +175,12 @@ a {
 
 .content h1 {
 	text-align: center;
-	margin-top: 40px;
-	margin-left: 140px;
-	margin-right: 140px;
+	margin: 4vh 4vw;
 	color: #fff;
 	font-family: Montserrat;
 	font-weight: bold;
 	font-size: 800%;
 	text-transform: uppercase;
-	margin-bottom: 40px;
 }
 
 .content h1 span {
@@ -238,7 +235,7 @@ a {
 	border-width: 0;
 }
 
-#current-hr {
+#current-s-i hr {
 	background: 
 		linear-gradient(
 			to right,
@@ -273,14 +270,13 @@ a {
 
 .story p {
 	text-align: justify;
-	margin: 40px 20vh;
+	margin: 40px 14vw;
 	color: #acacac;
 	font-family: Montserrat;
 	line-height: 24px;
 }
 
 .story .img-box {
-	padding-left: 20px;
 	display: flex;
 	width: 100%;
 	height: 250px;
@@ -345,6 +341,10 @@ a {
 
 @media screen and (max-width: 960px) {
 
+	.single-page {
+		height: 100%;
+	}
+
 	.content {
 		width: 100%;
 		height: 100%;
@@ -354,8 +354,8 @@ a {
 		display: none;
 	}
 
-	.welcome {
-		display: none;
+	.content h1 {
+		font-size: 4em;
 	}
 
 	.label:after {
@@ -411,6 +411,27 @@ a {
 	.mob-menu li:hover {
 		background: rgba(255,255,255,.5);
 		border-bottom: 3px solid var(--accent-color);
+	}
+
+	.slider-item {
+		font-size: 1em;
+	}
+
+	#current-s-i hr {
+		background: var(--primary-color);
+	}
+
+	/*TODO==FIX story p margin*/
+	.story p {
+		margin: 20px 6vw;
+	}
+
+	.story .img-box {
+		display: none;
+	}
+
+	.counter-wrapper {
+		display: none;
 	}
 
 }
