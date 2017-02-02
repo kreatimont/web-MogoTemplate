@@ -1,0 +1,1 @@
+# web-mogo-template
