@@ -313,14 +313,14 @@ a {
 .counter-wrapper ul {
 	display: block;
 	width: 1200px;
-	height: 175px;
+	height: 22vh;
 	margin: 0 auto;
 }
 
 .counter-wrapper ul li {
 	position: relative;
-	height: 175px;
-	width: 240px;
+	height: 24.5vh;
+	width: 15vw;
 	cursor: pointer;
 	color: #fff;
 	font-family: Montserrat;
@@ -335,6 +335,20 @@ a {
 .counter-wrapper ul li:hover {
 	background: var(--primary-color);
 }
+
+.counter-wrapper ul li p {
+	display: block;
+	color: var(--secondary-color-blue);
+	text-align: center;
+	font-size: 0.2em;
+	margin: 0;
+	padding: 0;
+	margin-top: -45px;
+}
+
+.counter-wrapper ul li p:hover {
+
+} 
 
 
 /*=====Responsive=====*/
