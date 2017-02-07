@@ -126,7 +126,8 @@
 }
 
 .mob-menu {
-	display: none;
+	overflow: hidden;
+	height: 0px;
 }
 
 .menu {
@@ -216,8 +217,10 @@ a {
 
 .slider {
 	width: 90%;
-	height: 10vh;
-	margin: 0 auto;
+	height: 60px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-around;
 }
 
 .slider-item {
@@ -303,34 +306,36 @@ a {
 	height: 250px;
 	transition: all .2s ease-in-out;
 	cursor: pointer;
+	position: relative;
 }
 
 .info {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	color: #fff;
+	display: none;
 }
 
 .info > p {
-	margin: 0;
+	margin: 100px auto;
+	display: block;
 	width: 100%;
 	color: #fff;
 	text-align: center;
-	line-height: 250px;
+	line-height: 25px;
 	text-transform: uppercase;
-	margin-top: -10px;
+	margin-bottom: 0px;
 }
 
-.info > p.info-icon {
-	margin-bottom: -220px;
+.info > p:last-child {
+	margin-top: 0px;
 }
 
 .info-icon > .material-icons {
 	font-size: 36px;
-}
-
-.img-wrapper .info {
-	display: none;
 }
 
 .thumb-1 {
@@ -428,7 +433,7 @@ a {
 
 .services {
 	width: 100%;
-	height: 30vh;
+	height: 100%;
 	margin: 70px auto;
 }
 
@@ -618,6 +623,98 @@ a {
 	transition: all .5s ease-in-out;
 }
 
+.team-container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.team-container .person {
+	height: 530px;
+	width: 380px;
+}
+
+.person .name {
+	padding: 2px 4px;
+	margin: 4px 0px;
+	width: 380px;
+	text-transform: uppercase;
+	color: #333;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-family: Montserrat;
+	font-size: 1.2em;
+}
+
+.person > p.role {
+	padding: 2px 4px;
+	margin: -4px 0px;
+	width: 380px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-family: RobotoLightItalic;
+	font-size: 1.1em;
+}
+
+.single-person {
+	position: relative;
+	width: 379px;
+	height: 439px;
+	background: var(--primary-color);
+}
+
+.single-person .overlay {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	width: 379px;
+	height: 439px;
+	opacity: 0;
+	background: -webkit-linear-gradient(rgba(81, 183, 170, 0.8), rgba(255, 207, 74, 0.8));
+	background: -o-linear-gradient(rgba(81, 183, 170, 0.8), rgba(255, 207, 74, 0.8));
+	background: -moz-linear-gradient(rgba(81, 183, 170, 0.8), rgba(255, 207, 74, 0.8));
+	background: linear-gradient(rgba(81, 183, 170, 0.8), rgba(255, 207, 74, 0.8));
+}
+
+.single-person:hover .overlay {
+	opacity: 1;
+	transform: translate(-8px, -8px);
+	transition: transform .2s ease-in-out, opacity .4s ease-in-out;
+}
+
+.single-person:hover img {
+	transform: translate(-8px, -8px);
+	transition: transform .2s ease-in-out;
+}
+
+.single-person .overlay .social {
+	padding: 50% 20%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.single-person .overlay .social li {
+	float: left;
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	line-height: 68px;
+	text-align: center;
+	color: var(--primary-color);
+	background: #fff;
+	margin: 1px;
+}
+
+.single-person .overlay .social li:hover {
+	background: var(--primary-color);
+	color: var(--accent-color);
+}
+
 /*=====Responsive=====*/
 
 @media screen and (max-width: 960px) {
@@ -693,33 +790,72 @@ a {
 		background: rgba(255,255,255,.5);
 		border-bottom: 3px solid var(--accent-color);
 	}
+	
+	.slider {
+		display: block;
+		width: 40vw;
+		height: 140px;
+		margin: 8px auto;
+	}
 
 	.slider-item {
 		font-size: 1em;
+		margin: 6px;
 	}
 
 	#current-s-i hr {
 		background: var(--primary-color);
 	}
 
-	/*TODO==FIX story p margin*/
-	.story p {
-		margin: 20px 6vw;
+	.story .img-box {
+		height: 100%;
+		width: 95%;
+		display: block;
 	}
 
-	.story .img-box {
-		display: none;
+	.story .img-box li {
+		margin: 24px auto;
+		padding: 0;
+		width: 380px;
+		height: 250px;
+	}
+
+	.story .img-box li:last-child {
+		margin: 24px auto;
 	}
 
 	.counter-wrapper {
-		display: none;
+		display: block;
+		width: 100vw;
+		height: 1000px;
 	}
 
+	.counter-wrapper  ul {
+		width: 100vw;
+		height: 100%;
+		display: block;
+	}
+
+	.counter-wrapper ul li {
+		width: 100vw;
+		height: 200px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.comments-wrapper {
+		margin: 20px 0;
+	}
+	
+	.comments img {
+		display: none;
+	}
+	
+	
 }
 
 
 @media screen and (max-height: 760px) {
-	
+
 	.single-page {
 		height: 100%;
 	}
