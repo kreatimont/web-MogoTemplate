@@ -1,3 +1,7 @@
-# web-mogo-template
+# Web practice
 
-![alt tag](public/assets/images/welcome-banner.png)
+======
+
+![welcome][welcome]
+
+[welcome]: welcome-banner.png "welcome"
