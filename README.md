@@ -1,3 +1,3 @@
 # web-mogo-template
 
-![alt tag](images/welcome-banner.png)
+![alt tag](public/assets/images/welcome-banner.png)
