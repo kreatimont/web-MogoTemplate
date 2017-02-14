@@ -1,0 +1,23 @@
+{
+  "name": "web-mogo-template",
+  "version": "1.0.0",
+  "description": "![alt tag](images/welcome-banner.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kreatimont/web-mogo-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kreatimont/web-mogo-template/issues"
+  },
+  "homepage": "https://github.com/kreatimont/web-mogo-template#readme",
+  "devDependencies": {
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0"
+  }
+}
