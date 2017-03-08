@@ -118,6 +118,7 @@
 	padding-top: 30px;
 	padding-left: 30px;
 	color: #fff;
+	letter-spacing: 1px;
 	font-family: Montserrat;
 	font-size: 2em;
 	font-weight: bold;
@@ -499,6 +500,23 @@ a {
 	margin: 0px auto;
 	display: flex;
 	justify-content: center;
+}
+
+.team {
+	margin-bottom: 40px;
+}
+
+.label-container {
+	height: 240px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.label-container > img {
+	height: 50%;
+	width: 90%;
+	margin: 60px 5%;
+	cursor: crosshair;
 }
 
 .comments > img {
