@@ -51,6 +51,75 @@
 	}
 }
 
+@keyframes insta-gradientus {
+	0% {
+	box-shadow: 0 -100px 50px -120px rgba(81, 183, 170, 0.5) inset,
+				0 100px 50px -120px rgba(239, 182, 29, 0.5) inset;
+	}
+	25% {
+	box-shadow: 0 -50px 50px -120px rgba(239, 182, 29, 0.5) inset,
+				0  200px 50px -120px rgba(243, 129, 129, 0.5) inset;
+	}
+	50% {
+	box-shadow: 0 -200px 50px -120px rgba(239, 182, 29, 0.5) inset,
+				0  100px 50px -120px rgba(243, 129, 129, 0.5) inset;
+
+	}
+	75% {
+	box-shadow: 0 -100px 50px -60px rgba(239, 182, 29, 0.5) inset,
+				0  100px 50px -60px rgba(243, 129, 129, 0.5) inset;
+	}
+	100% {
+	box-shadow: 0 -50px 50px -60px rgba(243, 129, 129, 0.5) inset,
+				0  50px 50px -60px rgba(81, 183, 170, 0.5) inset;
+
+	}
+}
+
+@keyframes insta-stories {
+	0% {
+	background: linear-gradient(
+	  to bottom,
+      rgba(81, 183, 170, 0.5),
+      rgba(239, 182, 29, 0.5));
+	/*box-shadow: 0 -600px 200px -120px rgba(81, 183, 170, 0.5) inset,
+				0 600px 200px -120px rgba(239, 182, 29, 0.5) inset;*/
+	}
+	25% {
+		background: linear-gradient(
+	  to bottom,
+      rgba(239, 182, 29, 0.5)
+      rgba(243, 129, 129, 0.5));
+	/*box-shadow: 0 -300px 200px -120px rgba(239, 182, 29, 0.5) inset,
+				0  300px 200px -120px rgba(243, 129, 129, 0.5) inset;*/
+	}
+	50% {
+		background: linear-gradient(
+	  to bottom,
+      rgba(239, 182, 29, 0.5)
+      rgba(243, 129, 129, 0.5));
+	/*box-shadow: 0 -300px 200px -120px rgba(239, 182, 29, 0.5) inset,
+				0  600px 200px -120px rgba(243, 129, 129, 0.5) inset;*/
+	}
+	75% {
+		background: linear-gradient(
+	  to bottom,
+      rgba(239, 182, 29, 0.5)
+      rgba(243, 129, 129, 0.5));
+	/*box-shadow: 0 -600px 200px -120px rgba(239, 182, 29, 0.5) inset,
+				0  600px 200px -120px rgba(243, 129, 129, 0.5) inset;*/
+	}
+	100% {
+		background: linear-gradient(
+	  to bottom,
+      rgba(243, 129, 129, 0.5)
+      rgba(81, 183, 170, 0.5));
+	/*box-shadow: 0 -600px 200px -120px rgba(243, 129, 129, 0.5) inset,
+				0  600px 200px -120px rgba(81, 183, 170, 0.5) inset;*/
+	}
+}
+
+
 /*=============Theme colors=============*/
 
 	/*Standard theme*/
@@ -389,6 +458,7 @@ a {
 	background: var(--primary-color);
 	width: 100%;
 	height: 175px;
+	margin-bottom: 0px;
 }
 
 .counter-wrapper ul {
@@ -505,7 +575,8 @@ a {
 }
 
 .team {
-	margin-bottom: 40px;
+	margin-bottom: 140px;
+	height: 100%;
 }
 
 .label-container {
@@ -576,8 +647,6 @@ a {
 	display: block;
 }
 
-
-
 .slider--serv {
 	display: flex;
 	justify-content: center;
@@ -647,7 +716,7 @@ a {
 
 .team-container {
 	width: 90vw;
-	margin: 0 auto;
+	margin: 0px auto -120px auto;
 	display: flex;
 	justify-content: space-between;
 }
@@ -736,6 +805,61 @@ a {
 	background: var(--primary-color);
 	color: var(--accent-color);
 }
+
+.works {
+	display: flex;
+}
+
+.works > li {
+	margin: auto;
+	width: 120px;
+	height: 120px;
+}
+
+.works > li > a {
+	width: 110px;
+	height: 110px;
+	background: linear-gradient(rgba(81, 183, 170, 0.8), rgba(255, 207, 74, 0.8));
+	display: block;
+	border-radius: 55px;
+	transition: transform .2s ease-in-out;
+	transition-delay: .2s;
+}
+
+.works > li:nth-child(even) > a {
+	-webkit-animation: insta-gradientus 10s ease-in-out infinite;
+	-o-animation: insta-gradientus 10s ease-in-out infinite;
+	animation: insta-gradientus 10s ease-in-out infinite;
+	animation-play-state: running;
+}
+
+.works > li:nth-child(odd) > a {
+	-webkit-animation: insta-gradientus 6s linear infinite;
+	-o-animation: insta-gradientus 6s linear infinite;
+	animation: insta-gradientus 6s linear infinite;
+	animation-play-state: running;
+}
+
+.works > li > a > img {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	border-radius: 50px;
+	transition: opacity .4s ease-in-out;
+	transition: transform .4s ease-in-out;
+}
+
+.works > li > a:hover{
+	transform: scale(1.3, 1.3);
+	/*animation-play-state: running;*/
+}    
+
+.works > li > a:hover > img {
+	transform: scale(0, 0);
+	/*animation-play-state: running;*/
+}    
+
+
 
 /*=====Responsive=====*/
 
@@ -935,7 +1059,7 @@ a {
 }
 
 
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 700px) {
 
 	.single-page {
 		height: 100%;
