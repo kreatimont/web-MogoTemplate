@@ -43,9 +43,7 @@
     position: relative;
     margin: -280px 20px 10px 20px;
 	height: 270px;
-    /*font-family: Montserrat;*/
     font-weight: bold;
-    /*font-size: 16vw;*/
 }
 
 .page > img {
@@ -62,7 +60,5 @@
     left: 0;
     margin: -280px 20px 10px 20px;
 	height: 270px;
-    /*font-family: Montserrat;*/
     font-weight: lighter;
-    /*font-size: 16vw;*/
 }
